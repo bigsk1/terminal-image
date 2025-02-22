@@ -17,6 +17,18 @@ Perfect for developers, designers, or anyone needing fast image generation and h
 
 ---
 
+## Example 
+
+```yaml
+~/apps/terminal-image > cf image of a brown dog with space background          
+Generating images...       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00
+Uploading to Cloudflare... ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00
+Generated Image URLs:
+Image 1: https://imagedelivery.net/WfhVb8dSNAAvdXUdMfBuPQ/76f371eb-d259-48be-c46e-0f4bb76ec800/public
+Image 2: https://imagedelivery.net/WfhVb8dSNAAvdXUdMfBuPQ/5da314a0-7ea7-4560-49ed-f95a6c3a2700/public
+```
+
+
 ## Prerequisites
 
 Before using the script, ensure you have:
