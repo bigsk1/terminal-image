@@ -1,8 +1,8 @@
 # Cloudflare Terminal Image Generator (`cf`)
 
-This Python script provides a quick and easy way to generate images using OpenAI's API, upload them to Cloudflare Images, and get back hosted URLs directly in your terminal. Simply type a description (e.g., `python cf.py image of a brown dog with space background`), and the script will generate two images, upload them to Cloudflare, and display clickable URLs—all with a professional, progress-tracked interface powered by the `rich` library.
+This Python script provides a quick and easy way to generate images using OpenAI's API, upload them to Cloudflare Images, and get back hosted URLs directly in your terminal. Simply type a description (e.g., `python cf.py image of a brown dog with space background`), and the script will generate one image, upload to Cloudflare, and display clickable URLs—all with a professional, progress-tracked interface powered by the `rich` library.
 
-Perfect for developers, designers, or anyone needing fast image generation and hosting without the hassle of saving files locally. Cloudflare Images serves the uploaded images in any size or format as needed, making them versatile for projects.
+Perfect for developers, designers, or anyone needing fast image generation and hosting without the hassle of saving files locally. Cloudflare Images serves the uploaded image in any size or format as needed, making them versatile for projects.
 
 ---
 
