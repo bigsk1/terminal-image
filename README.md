@@ -9,7 +9,7 @@ Perfect for developers, designers, or anyone needing fast image generation and h
 ## Features
 
 - **Cross-Platform**: Works on Windows and Linux.
-- **Dual Image Generation**: Creates two images per request so you can choose the best one.
+- **Image Generation**: Creates one images per request using Dalle-3 in 1024x1024.
 - **Secure**: Stores API keys in environment variables, not the script.
 - **Professional Output**: Uses `rich` for progress bars and formatted terminal display.
 - **In-Memory Processing**: No temporary files saved to disk.
@@ -20,12 +20,11 @@ Perfect for developers, designers, or anyone needing fast image generation and h
 ## Example 
 
 ```yaml
-~/apps/terminal-image > cf image of a brown dog with space background          
-Generating images...       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00
+~/apps/terminal-image > python cf.py digital art theme for a french bulldog                                                          py base
+Generating image...        ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00
 Uploading to Cloudflare... ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00
-Generated Image URLs:
-Image 1: https://imagedelivery.net/WfhVb8dSNAAvdXUdMfBuPQ/76f371eb-d259-48be-c46e-0f4bb76ec800/public
-Image 2: https://imagedelivery.net/WfhVb8dSNAAvdXUdMfBuPQ/5da314a0-7ea7-4560-49ed-f95a6c3a2700/public
+Generated Image URL:
+Image: https://imagedelivery.net/WfhVb8dSNAAvdXUdMfBuPQ/6323ffb1-1b08-46f5-6a3c-67ae2d095c00/public
 ```
 
 
