@@ -220,7 +220,7 @@ Run the script with your image description:
     
 Optional: Alias as cf
 
-To run the script as cf <description> instead of python cf.py <description>:
+To run the script as cf <description> instead of python cf.py <description> from your terminal anywere!
 On Linux
 
   Move the script to a directory in your PATH:
@@ -230,7 +230,7 @@ On Linux
   sudo chmod +x /usr/local/bin/cf
   ```
   
-  Run it:
+  Run it anywere with:
   
   ```bash
   cf image of a brown dog with space background
