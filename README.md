@@ -64,8 +64,11 @@ Cloudflare API Token and Account ID
 
   Log in to your Cloudflare Dashboard.
   Go to Images > API Tokens (ensure you have Cloudflare Images enabled in your account).
+  
   Create a new API token with the Cloudflare Images: Edit permission.
+  
   Copy the token (e.g., Bearer ...).
+  
   From the Cloudflare Dashboard, note your Account ID (found under Account Home or in the URL: https://dash.cloudflare.com/<ACCOUNT_ID>).
 
 Step 4: Set Environment Variables
@@ -106,7 +109,6 @@ Set the variables permanently:
     
 Close and reopen your terminal to apply the changes.
 
-Step 5: Add the Script
     
 ### The Script (cf.py)
 
