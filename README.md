@@ -19,13 +19,7 @@ Perfect for developers, designers, or anyone needing fast image generation and h
 
 ## Example 
 
-```yaml
-~/apps/terminal-image > python cf.py digital art theme for a french bulldog                                                          py base
-Generating image...        ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00
-Uploading to Cloudflare... ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00
-Generated Image URL:
-Image: https://imagedelivery.net/WfhVb8dSNAAvdXUdMfBuPQ/6323ffb1-1b08-46f5-6a3c-67ae2d095c00/public
-```
+![cf](cf.png)
 
 
 ## Prerequisites
