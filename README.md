@@ -250,6 +250,8 @@ Run it:
   cf image of a brown dog with space background
   ```
 
+![dog](https://imagedelivery.net/WfhVb8dSNAAvdXUdMfBuPQ/c22e978e-98f6-43e3-49ce-55fead71d000/public)
+
 Troubleshooting
 
   API Key Errors: Verify the environment variables are set:
