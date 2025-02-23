@@ -12,7 +12,7 @@ Perfect for developers, designers, or anyone needing fast image generation and h
 - **Image Generation**: Creates one images per request using Dalle-3 in 1024x1024.
 - **Secure**: Stores API keys in environment variables, not the script.
 - **Professional Output**: Uses `rich` for progress bars and formatted terminal display.
-- **In-Memory Processing**: No temporary files saved to disk.
+- **Image Preview**: Provides a low res of your image in terminal to preview
 - **Simple Usage**: Run with a single command and your image description.
 
 ---
