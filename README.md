@@ -120,6 +120,7 @@ import base64
 from rich.console import Console
 from rich.progress import Progress
 from io import BytesIO
+from PIL import Image
 
 # Initialize Rich console for pretty terminal output
 console = Console()
@@ -190,6 +191,35 @@ try:
     console.print("[bold green]Generated Image URL:[/bold green]")
     console.print(f"Image: {image_url}")
 
+    # Step 5: Download and resize the image for better terminal preview
+    try:
+        image_response = requests.get(image_url)
+        image_response.raise_for_status()
+        image_data = image_response.content
+
+        # Save it as a temporary file
+        temp_image_path = "/tmp/cf_image.png"
+        with open(temp_image_path, "wb") as f:
+            f.write(image_data)
+
+        # Resize the image using Pillow before displaying
+        image = Image.open(temp_image_path)
+        image = image.resize((200, 200), Image.Resampling.LANCZOS)  # High-quality downscaling
+        image.save(temp_image_path, format="PNG")
+
+        # Display the image in the best available format
+        if os.system("command -v kitten >/dev/null") == 0:
+            os.system(f"kitten icat {temp_image_path}")  # Best quality (Kitty/WezTerm)
+        elif os.system("command -v viu >/dev/null") == 0:
+            os.system(f"viu -w 50 {temp_image_path}")  # Better color rendering
+        elif os.system("command -v chafa >/dev/null") == 0:
+            os.system(f"chafa --size=50x25 --symbols=block {temp_image_path}")  # High detail ASCII
+        else:
+            console.print("[yellow]Install 'kitten icat', 'viu', or 'chafa' for better image previews.[/yellow]")
+
+    except requests.exceptions.RequestException as e:
+        console.print(f"[bold red]Error displaying image: {e}[/bold red]")
+
 except requests.exceptions.RequestException as e:
     # Enhanced error reporting
     console.print(f"[bold red]Network Error: {e}[/bold red]")
@@ -198,6 +228,7 @@ except requests.exceptions.RequestException as e:
 except Exception as e:
     console.print(f"[bold red]Unexpected Error: {e}[/bold red]")
     sys.exit(1)
+
   ```
 
 Usage
