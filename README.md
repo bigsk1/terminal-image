@@ -19,7 +19,7 @@ Perfect for developers, designers, or anyone needing fast image generation and h
 
 ## Example 
 
-![cf](cf.png)
+![cf2](cf2.png)
 
 
 ## Prerequisites
