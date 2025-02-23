@@ -42,7 +42,11 @@ Clone this repository to your local machine:
 ```bash
 git clone https://github.com/bigsk1/terminal-image.git
 cd terminal-image
-pip install requests rich
+pip install requests rich pillow
+```
+
+```bash
+sudo apt install viu chafa -y
 ```
 
 Step 3: Obtain API Keys
