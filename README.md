@@ -195,6 +195,19 @@ cf "image of a brown dog with space background"
 - **URLs Not Clickable:** Some terminals don’t support hyperlinks—copy and paste the URLs instead.
 - **Permission Denied (Linux/macOS):** Ensure the script is executable (`chmod +x cf.py`).
 
+### History File Not Being Created: If cf_history.json does not appear, ensure cf.py has correct ownership:
+
+```bash
+sudo chown $USER:$USER ~/path/to/cf.py
+```
+
+Also, check directory permissions:
+
+```bash
+sudo chown -R $USER:$USER ~/path/to/terminal-image
+chmod u+w ~/path/to/terminal-image
+```
+
 ---
 
 ### Example Generated Image
