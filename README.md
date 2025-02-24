@@ -133,29 +133,56 @@ python cf.py --history  # View previously generated images
 ![history](history.png)
 ---
 
-### Optional: Alias `cf` for Easier Usage
+### Optional: Alias cf for Easier Usage
 
-#### On Linux/macOS
-Move the script to a directory in your PATH:
+Instead of moving the script, you can create an alias to run it from anywhere:
+
+On Linux/macOS
+
+Open your shell config file:
+
 ```bash
-sudo mv cf.py /usr/local/bin/cf
-sudo chmod +x /usr/local/bin/cf
+nano ~/.zshrc  # or nano ~/.bashrc
 ```
+
+Add this line:
+
+```bash
+alias cf="python3 /path/to/terminal-image/cf.py"
+```
+
+Save and apply changes:
+
+```bash
+source ~/.zshrc  # If using Zsh
+source ~/.bashrc  # If using Bash
+```
+
 Now, run it anywhere:
+
 ```bash
 cf "image of a brown dog with space background"
 ```
 
-#### On Windows
-Create a batch file in a PATH directory:
+On Windows
+
+Open PowerShell and add the alias:
+
 ```bash
+New-Alias -Name cf -Value "C:\path\to\cf.py"
+```
+
+Or, create a batch file (cf.bat) in a directory included in PATH:
+
 echo @echo off > C:\Windows\cf.bat
 echo python "C:\path\to\cf.py" %%* >> C:\Windows\cf.bat
-```
-Run it:
+
+Now, run it:
+
 ```bash
 cf "image of a brown dog with space background"
 ```
+
 
 ---
 
