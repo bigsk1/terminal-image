@@ -20,7 +20,7 @@ Perfect for developers, designers, or anyone needing fast image generation and h
 
 ## Example
 
-![cf2](cf2.png)
+![cf3](cf3.png)
 
 ---
 
@@ -120,6 +120,9 @@ python cf.py "image of a brown dog with space background"
 | `--history` | View past image generations (URLs, prompts, and expiry status). |
 | `--help` | Show available options. |
 
+![cf2](cf2.png)
+
+
 ### Example Commands:
 ```bash
 python cf.py --wide "futuristic cyberpunk city"
@@ -127,7 +130,7 @@ python cf.py --expire 24h "a robot in the rain"
 python cf.py --expire 30d --wide "a space station in orbit"
 python cf.py --history  # View previously generated images
 ```
-
+![history](history.png)
 ---
 
 ### Optional: Alias `cf` for Easier Usage
