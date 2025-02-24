@@ -22,6 +22,8 @@ Perfect for developers, designers, or anyone needing fast image generation and h
 
 ![cf3](cf3.png)
 
+Click on the url to view the high res in browser or copy and paste the image url for all your needs!
+
 ---
 
 ## Prerequisites
