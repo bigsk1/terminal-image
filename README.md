@@ -62,7 +62,7 @@ sudo apt install viu chafa -y  # Linux
 - Log in to your [Cloudflare Dashboard](https://dash.cloudflare.com/).
 - Navigate to **Images > API Tokens** (ensure Cloudflare Images is enabled).
 - Create a new API token with the **Cloudflare Images: Edit** permission.
-- Copy the token (`Bearer ...`).
+- Copy the token (`Acct. ID and Token`).
 - Note your **Account ID** (found under Account Home or in the URL `https://dash.cloudflare.com/<ACCOUNT_ID>`).
 
 ---
